@@ -1,0 +1,36 @@
+# Certificate directories and files
+certs*
+*.pem
+*.cer
+*.crt
+*.key
+
+# Environment and secrets
+*.env
+.env*
+!*.env.example
+
+# Log files
+*.log
+cert-renewal.log
+
+# Temporary files
+*.tmp
+/tmp/
+
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Backup files
+*.bak
+*~
+*.swp
+*.swo
+
+# acme.sh account info (if you copy it locally)
+account.key
+account.json
