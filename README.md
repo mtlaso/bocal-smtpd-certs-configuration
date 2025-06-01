@@ -1,7 +1,6 @@
 # bocal-smtpd certs configuration
 
-Configuration des certifications TLS de bocal-smtpd.
-
+## Configuration des certifications TLS de bocal-smtpd.
 
 1. Remplier le ficher des variables d'environements et le renommer en `bws_push.env` (sans .example)
 2. Modifier le lien des variables d'environements dans `bws_push.sh`
