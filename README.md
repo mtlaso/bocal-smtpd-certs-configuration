@@ -11,3 +11,4 @@
 6. Lancer acme.sh (une fois pour la première fois) `acme.sh --issue --dns dns_porkbun -d bocalusermail.fyi --server letsencrypt` (zerossl ne fonctionne pas)
 7. Utiliser notification avec le cronjob de acme.sh
     - `acme.sh --set-notify --notify-hook bws_push --notify-hook mailgun`
+8. Ajouter `bws_keys_reminder.sh` dans crontab (voir commentaire dans fichier)
