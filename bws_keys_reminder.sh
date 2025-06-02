@@ -14,5 +14,5 @@ curl -s --user $KEY \
   -F from="Mailgun Sandbox (cron macos) <postmaster@${MAILGUN_API_DOMAIN}>" \
   -F to="Root <${MAILGUN_TO}>" \
   -F subject='Renouveler BWS secret' \
-  -F text='Il est temps de renouveler le secret BWS secret. (github, ficher .env). Faire un backup des fichers env.' \
+  -F text='Il est temps de renouveler les informations de Bitwarden Secrets Manager. (github, ficher .env). Faire un backup des fichers env.' \
 
