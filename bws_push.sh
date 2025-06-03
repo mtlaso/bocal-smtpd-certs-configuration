@@ -17,8 +17,8 @@ bws_push_send() {
   if [ -f "$CERT_DIR/fullchain.cer" ] && [ -f "$CERT_DIR/bocalusermail.fyi.key" ]; then
       _info "🔐 Uploading certificates to Bitwarden..."
   
-      PRIVATEKEY_VAL=$(cat "$CERT_DIR/fullchain.cer" | base64)
-      FULLCHAIN_VAL=$(cat "$CERT_DIR/bocalusermail.fyi.key" | base64)
+      PRIVATEKEY_VAL=$(cat "$CERT_DIR/bocalusermail.fyi.key" | base64)
+      FULLCHAIN_VAL=$(cat "$CERT_DIR/fullchain.cer" | base64)
       
       bws secret edit $BWS_PRIVATEKEY_ID \
           --access-token $BWS_ACCESS_TOKEN \
