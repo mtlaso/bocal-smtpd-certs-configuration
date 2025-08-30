@@ -8,7 +8,7 @@
     - `ln bws_push.sh ~/.acme.sh/notify`
 4. Source les variables d'environements `source ./bws_push.sh.env`
 5. Activer auto-upgrades `acme.sh --upgrade --auto-upgrade 1`
-6. Lancer acme.sh (une fois pour la première fois) `acme.sh --issue --dns dns_porkbun -d bocalusermail.fyi --server letsencrypt` (zerossl ne fonctionne pas)
+6. Lancer acme.sh (une fois pour la première fois) `acme.sh --issue --dns dns_porkbun -d mail.bocalusermail.fyi --server letsencrypt` (zerossl ne fonctionne pas)
 7. Utiliser notification avec le cronjob de acme.sh
     - `acme.sh --set-notify --notify-hook bws_push --notify-hook mailgun`
 

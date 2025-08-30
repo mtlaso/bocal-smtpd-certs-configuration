@@ -8,13 +8,13 @@ bws_push_send() {
   #### Upload certs to Bitwarden secrets. ####
   ############################################
 
-  CERT_DIR=~/.acme.sh/bocalusermail.fyi_ecc
+  CERT_DIR=~/.acme.sh/mail.bocalusermail.fyi_ecc
   _subject="$1"
   _content="$2"
   _statusCode="$3" #0: success, 1: error 2($RENEW_SKIP): skipped
   _debug "_statusCode" "$_statusCode"
 
-  if [ -f "$CERT_DIR/fullchain.cer" ] && [ -f "$CERT_DIR/bocalusermail.fyi.key" ]; then
+  if [ -f "$CERT_DIR/fullchain.cer" ] && [ -f "$CERT_DIR/mail.bocalusermail.fyi.key" ]; then
       _info "🔐 Uploading certificates to Bitwarden..."
   
       PRIVATEKEY_VAL=$(cat "$CERT_DIR/bocalusermail.fyi.key" | base64)
